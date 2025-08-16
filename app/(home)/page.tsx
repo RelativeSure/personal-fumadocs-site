@@ -1,4 +1,4 @@
-import { buttonVariants } from 'fumadocs-ui/components/button';
+import { buttonVariants } from '@/components/ui/button';
 import { MoveRightIcon } from 'lucide-react';
 import Link from 'next/link';
 

@@ -4,7 +4,7 @@ description: Welcome to your new Fumadocs site!
 ---
 
 import { Callout } from 'fumadocs-ui/components/callout';
-import { File, Folder, FileTree } from 'fumadocs-ui/components/file-tree';
+import { File, Folder, Files } from '@/components/files';
 import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
 Welcome to the docs! You can start writing documents in `/content/docs`.
@@ -21,7 +21,7 @@ Here are some example components that you can use in your documentation.
 
 ### File Tree
 
-<FileTree>
+<Files>
   <Folder name="app" defaultOpen>
     <Folder name="docs" defaultOpen>
         <File name="layout.tsx" />
@@ -35,7 +35,7 @@ Here are some example components that you can use in your documentation.
         <File name="introduction.mdx" />
     </Folder>
   </Folder>
-</FileTree>
+</Files>
 
 ### Tabs
 

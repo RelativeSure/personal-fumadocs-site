@@ -7,13 +7,13 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  * Home Layout: app/(home)/layout.tsx
  * Docs Layout: app/docs/layout.tsx
  */
-import { FumadocsLogo } from 'fumadocs-ui/components/logo';
+// import { FumadocsLogo } from 'fumadocs-ui/components/logo';
 
 export const baseOptions: BaseLayoutProps = {
   nav: {
     title: (
       <>
-        <FumadocsLogo />
+        {/* <FumadocsLogo /> */}
         Fumadocs Example
       </>
     ),
