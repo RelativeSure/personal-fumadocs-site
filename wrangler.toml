@@ -1,0 +1,24 @@
+# This is a basic wrangler.toml file.
+# You will need to configure your build process to output a Cloudflare Worker compatible script.
+# See the Cloudflare documentation for more information on deploying Next.js sites:
+# https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/
+
+name = "personal-fumadocs-site"
+compatibility_date = "2025-08-16"
+
+# The "main" field points to the entry point of your worker.
+# This will be the output of your build process.
+# For example, if you are using a custom build script that outputs a `_worker.js` file,
+# you would set main = "./_worker.js".
+# Since we are using a standard `next build`, there is no single entry point.
+# You will need to adapt your build process to generate a worker script.
+main = "your-worker-script.js"
+
+[build]
+# The command to build your project.
+command = "pnpm build"
+# The directory to upload to Workers.
+# This should be the directory that contains your worker script and static assets.
+# For a standard Next.js project, this is typically `.next`.
+# However, for a worker deployment, you might need a different output directory.
+upload_dir = ".next"

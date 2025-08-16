@@ -1,0 +1,58 @@
+---
+title: Introduction
+description: Welcome to your new Fumadocs site!
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { File, Folder, Files } from '@/components/files';
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+Welcome to the docs! You can start writing documents in `/content/docs`.
+
+## Example Components
+
+Here are some example components that you can use in your documentation.
+
+### Callout
+
+<Callout title="Heads up!">
+  This is a callout component. You can use it to draw attention to important information.
+</Callout>
+
+### File Tree
+
+<Files>
+  <Folder name="app" defaultOpen>
+    <Folder name="docs" defaultOpen>
+        <File name="layout.tsx" />
+        <File name="page.tsx" />
+    </Folder>
+    <File name="layout.tsx" />
+    <File name="page.tsx" />
+  </Folder>
+  <Folder name="content" defaultOpen>
+    <Folder name="docs" defaultOpen>
+        <File name="introduction.mdx" />
+    </Folder>
+  </Folder>
+</Files>
+
+### Tabs
+
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tab value="pnpm">
+    ```bash
+    pnpm create fumadocs-app
+    ```
+  </Tab>
+  <Tab value="npm">
+    ```bash
+    npx create-fumadocs-app
+    ```
+  </Tab>
+  <Tab value="yarn">
+    ```bash
+    yarn create fumadocs-app
+    ```
+  </Tab>
+</Tabs>
